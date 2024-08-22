@@ -20,5 +20,5 @@
 
     - name: Write the ACL cofiguration to a file
       copy:
-        content: "{{ {'acls': acls['gathered']} | to_nice_yaml}}"
+        content: "{{ {'acls': acls['gathered']} | to_nice_yaml }}"
         dest: "{{ inventory_dir }}/host_vars/{{ inventory_hostname }}/acls.yaml"
