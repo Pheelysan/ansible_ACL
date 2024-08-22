@@ -1,9 +1,9 @@
 - name: Convert Configured ACLs to Structured Data
   hosts: TEST
   gather_facts: false
-
+  connection: network_cli
   vars:
-    ansible_connection: network_cli
+    ansible_connection: ansible.netcommon.network_cli
     ansible_network_os: cisco.ios.ios
 
   tasks:
